@@ -1,73 +1,128 @@
-# Welcome to your Lovable project
+# Yojnasathi - Queue Free India
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/13187181-b6c8-4983-93a0-1d6bf32ee4a7
+## Problem Statement
 
-## How can I edit this code?
+In rural India, citizens often face long queues, lack of awareness, and difficulty in filling complex forms to access government schemes at eSeva/CSC centers. Many are not digitally literate, leading to wasted time, repeated visits, and incomplete applications. Additionally, server overloads and absence of appointment systems further increase waiting time and inefficiency.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Why This Project Matters
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/13187181-b6c8-4983-93a0-1d6bf32ee4a7) and start prompting.
+This project addresses real challenges faced by rural citizens in accessing government services. By digitizing scheme discovery and reducing dependency on physical queues, Yojnasathi aims to improve efficiency, accessibility, and overall user experience.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Project Overview
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Yojnasathi – Queue Free India is a web application designed to streamline access to government services and reduce long queues at eSeva/CSC centers.
+- The platform supports mobile OTP-based authentication using Vonage API, along with a Guest Mode, allowing users to explore the application even without login. Once authenticated, users can access multiple service-focused modules:
+- My Schemes: Displays government schemes that the user is eligible to apply for based on their profile.
+- Book Appointment: Allows users to book appointments at eSeva centers by submitting personal details, selecting preferred date and time, choosing a service center, and viewing the list of required documents based on the purpose of visit.
+- Appointment Status: Provides real-time appointment tracking with a unique token (letter + number), center contact information, and a visual progress bar showing the appointment stage.
+- Nearby eSeva Centers: Enables users to search for nearby service centers based on their location with Google Maps integration for better navigation and accessibility.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Key Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- User Authentication with OTP
+- Supabase backend integration
+- Component-Based Architecture
+- Tailwind CSS for Styling
+- Performance optimizations
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Screenshots
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Home Page
+![Home! Screenshot](screenshots/home.png)
 
-**Edit a file directly in GitHub**
+### My Schemes
+![my_schemes! Screenshot](screenshots/my_schemes.png)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Book Appointment
+![book_appointment! Screenshot](screenshots/book_appointment.png)
 
-**Use GitHub Codespaces**
+### Appointment Status
+![appointment_status! Screenshot](screenshots/appointment_status.png)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Nearby eSeva/CSC Centers
+![nearby_centers! Screenshot](screenshots/mearby_centers.png)
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Tech Stack
 
 - Vite
-- TypeScript
 - React
-- shadcn-ui
+- TypeScript
 - Tailwind CSS
+- shadcn-ui
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/13187181-b6c8-4983-93a0-1d6bf32ee4a7) and click on Share -> Publish.
+## Live Demo
 
-## Can I connect a custom domain to my Lovable project?
+🔗 https://yojnasathi-sih.vercel.app/
 
-Yes, you can!
+⚠️ Note: OTP authentication using Vonage API has been discontinued.
+To ensure smooth access, the application currently supports Guest Mode,
+allowing users to explore the full UI and scheme flow without login.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Installation & Setup
+
+Follow these steps to run the project locally:
+```bash
+# Clone the repository
+git clone https://github.com/keshavgit23/yojnasathi.git
+
+# Navigate into the project folder
+cd yojnasathi-connect-ui
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+👉 Make sure you have Node.js and npm installed before running the project.
+```
+---
+
+## 📂 Project Structure
+
+yojnasathi-connect-ui
+│
+├── public/        # Static assets
+├── src/           # Application source code
+├── index.html     # Entry HTML file
+├── vite.config.ts # Vite configuration
+└── package.json   # Dependencies & scripts
+
+---
+
+## Future Improvements
+
+- Advanced Authentication – Replace discontinued OTP service with providers like Firebase or Twilio for more reliable login.
+- User Dashboard – Personalized dashboard to track applied schemes and recommendations.
+- Smart Search & Filters – Enable search by category, eligibility, location, and benefits.
+- Save / Bookmark Schemes – Allow users to bookmark schemes for quick access later.
+- AI-Based Recommendations – Suggest relevant schemes based on user profile and preferences.
+- Notifications System – Alerts for new schemes, deadlines, and status updates.
+
+
+---
+
+## Contributing
+
+Contributions are welcome!
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## If you like this project, consider giving it a star!
