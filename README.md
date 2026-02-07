@@ -50,7 +50,7 @@ This project addresses real challenges faced by rural citizens in accessing gove
 ![appointment_status! Screenshot](screenshots/appointment_status.png)
 
 ### Nearby eSeva/CSC Centers
-![nearby_centers! Screenshot](screenshots/mearby_centers.png)
+![nearby_centers! Screenshot](screenshots/nearby_centers.png)
 
 ---
 
